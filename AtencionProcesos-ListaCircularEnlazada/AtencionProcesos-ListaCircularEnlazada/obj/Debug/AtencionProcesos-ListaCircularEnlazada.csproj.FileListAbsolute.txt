@@ -1,0 +1,9 @@
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\bin\Debug\AtencionProcesos-ListaCircularEnlazada.exe.config
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\bin\Debug\AtencionProcesos-ListaCircularEnlazada.exe
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\bin\Debug\AtencionProcesos-ListaCircularEnlazada.pdb
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\obj\Debug\AtencionProcesos-ListaCircularEnlazada.csprojResolveAssemblyReference.cache
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\obj\Debug\AtencionProcesos_ListaCircularEnlazada.FormMain.resources
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\obj\Debug\AtencionProcesos_ListaCircularEnlazada.Properties.Resources.resources
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\obj\Debug\AtencionProcesos-ListaCircularEnlazada.csproj.GenerateResource.Cache
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\obj\Debug\AtencionProcesos-ListaCircularEnlazada.exe
+c:\users\packo\documents\visual studio 2017\Projects\AtencionProcesos-ListaCircularEnlazada\AtencionProcesos-ListaCircularEnlazada\obj\Debug\AtencionProcesos-ListaCircularEnlazada.pdb
