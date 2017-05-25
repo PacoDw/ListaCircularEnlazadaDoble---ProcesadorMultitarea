@@ -77,13 +77,15 @@ namespace AtencionProcesos_ListaCircularEnlazada
 
             Proceso temp = null;
 
-            for(int i = 1; i <= 200; i++)
+            for (int i = 1; i <= 200; i++)
             {
                 //Contamos cada vuelta el ciclo para mostrarlo en el reporte
                 _reporte += "===========================" + Environment.NewLine
                           + "             Ciclo:  " + i + Environment.NewLine
                           + "===========================" + Environment.NewLine;
 
+                _probabilidad = alea.Next(1, 12);
+                _vidaProceso = aleatorio.Next(4, 12);
                 if (_probabilidad >= 1 && _probabilidad <= 3)
                 {
                     Proceso nuevo = new Proceso(num++, _vidaProceso);
@@ -94,24 +96,23 @@ namespace AtencionProcesos_ListaCircularEnlazada
 
                     _totalProcesosA++;
                 }
-                _probabilidad = alea.Next(1, 12);
-                _vidaProceso = aleatorio.Next(4, 12);
 
-                if (temp != null)
+                if (listaProcesos.Actual() != null)
                 {
 
-                    if (temp.VidaRestante > 0)
+                    if (listaProcesos.Actual().VidaRestante > 0)
                     {
-                        temp.VidaRestante -= 1;
-                        _reporte += temp.ToString();
+                        listaProcesos.Actual().VidaRestante -= 1;
+                        _reporte += listaProcesos.Actual().ToString();
+                        listaProcesos.moverAsiguiente();
                     }
                     else
                     {
-                        _reporte += "Proceso: " + temp.NumProceso + Environment.NewLine
+                        _reporte += "Proceso: " + listaProcesos.Actual().NumProceso + Environment.NewLine
                                   + "Ciclos originales:  Null" + Environment.NewLine
                                   + "    Proceso ELIMINADO" + Environment.NewLine
                                   + "-----------------------------" + Environment.NewLine;
-                        listaProcesos.Eliminar(temp);
+                        listaProcesos.Eliminar(listaProcesos.Actual());
                     }
                 }
                 else
@@ -123,16 +124,12 @@ namespace AtencionProcesos_ListaCircularEnlazada
                     _ciclosOcio++;
                 }
 
-                if(_numMayorCiclos < listaProcesos.Count)
+                if (_numMayorCiclos < listaProcesos.Count)
                 {
                     _numMayorCiclos = listaProcesos.Count;
                     _EnQueCiclo = i;
                 }
-
-                if(temp != null && temp.Siguiente != null)
-                    temp = temp.Siguiente;
             }
         }
-
     }
 }

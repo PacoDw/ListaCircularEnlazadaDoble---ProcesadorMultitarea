@@ -36,7 +36,11 @@ namespace AtencionProcesos_ListaCircularEnlazada
         public void Agregar(Proceso nuevo)
         {
             if (_inicio == null)
+            {
                 _inicio = nuevo;
+                nuevo.Siguiente = _inicio;
+                nuevo.Anterior = _inicio;
+            }
             else
             {
                 nuevo.Siguiente = _inicio;
@@ -121,6 +125,20 @@ namespace AtencionProcesos_ListaCircularEnlazada
                 }
                 _count--;
             }
+        }
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------
+        //METODO ACTUAL - retorna el proceso que esta siendo atendido
+        public Proceso Actual()
+        {
+            return _inicio;
+        }
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------
+        //METODO MOVERASIGUIENTE - es un temp = temp.siguiente pero en metodo
+        public void moverAsiguiente()
+        {
+            _inicio = _inicio.Siguiente;
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
